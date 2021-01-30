@@ -39,7 +39,7 @@ distiller_evolvegcn.train_student(epochs=epochs, plot_losses=True, save_model=Tr
 
 from src.DeepNeuralDecisionForest import NeuralDecisionForest as ndf
 
-epochs = 100
+epochs = 500
 
 feat_layer = RecurrentGCN(node_features=num_node_features, num_classes=2, dropout_rate=0.65)
 forest = ndf.Forest(n_tree=80, tree_depth=8, n_class=2, n_in_feature=2, tree_feature_rate=0.65)
